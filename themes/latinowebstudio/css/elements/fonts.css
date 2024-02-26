@@ -1,0 +1,152 @@
+.text-white *,
+.text-white {
+  color: white;
+}
+
+.text-white a:hover {
+  color: white;
+}
+
+.text-accent,
+a {
+  color: var(--accent-primary);
+}
+
+.text-accent-secondary {
+  color: var(--accent-secondary);
+}
+
+.text-accent-tertiary {
+  color: var(--accent-tertiary);
+}
+
+.text-gray {
+  color: #585556;
+}
+
+.text-shadow {
+  text-shadow: var(--text-shadow);
+}
+
+.text-black {
+  color: black;
+}
+
+a.text-black:hover {
+  color: black;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.ls-1 {
+  letter-spacing: 1em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.wp-block-quote {
+  border-left: 2px solid;
+  margin: 0 0 1.75em;
+  padding-left: 1em;
+  font-style: italic;
+  font-size: 18px;
+}
+
+html,
+body {
+  font-family: 'robotoregular';
+}
+
+.light {
+  font-family: 'robotolight';
+}
+
+.thin {
+  font-family: 'robotothin';
+}
+
+.bold,
+strong {
+  font-family: 'robotobold';
+}
+
+.arrows li {
+  position: relative;
+  list-style: none;
+  /* color: #a4a3a3; */
+  color: black;
+  font-style: italic;
+  font-family: 'robotobold';
+  font-size: 95%;
+}
+
+.arrows li:before {
+  content: "";
+  /* background: url('https://insideoutcreative.io/wp-content/uploads/2023/02/Arrow-Right-Gold.png'); */
+  background: url('https://buildupuniversity.com/wp-content/uploads/2024/02/Arrow-Right-White.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+
+.arrows.text-white li {
+  color: white;
+}
+
+blockquote {
+  font-size: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 3.5rem;
+}
+
+h1,
+.protest {
+  font-family: 'protest_strikeregular';
+}
+
+h2,
+.h2 {
+  font-size: 2.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.montserrat-thin {
+  font-family: 'montserratthin';
+}
+
+@media only screen and (max-width:767px) {
+
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+}
