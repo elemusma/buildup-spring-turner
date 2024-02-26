@@ -9,13 +9,13 @@ input.gform_button.button {
   width: 100%;
   margin: auto;
   cursor: pointer;
-  color: white;
+  color: black;
   box-shadow: none !important;
 }
 
 input.gform_button.button:hover {
-  background-color: var(--accent-secondary);
-  border-color: var(--accent-secondary);
+  background-color: var(--accent-tertiary);
+  border-color: var(--accent-tertiary);
 }
 
 .gform_footer.top_label {

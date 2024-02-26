@@ -11,8 +11,9 @@ echo '<div class="position-absolute" style="top:-50px;" id="' . get_field('id') 
 
 
     // echo wp_get_attachment_image(173,'full','',['class'=>'w-100 position-absolute','style'=>'height:80%;top:10%;left:0;mix-blend-mode:multiply;']);
+    echo '<div class="position-absolute w-100" style="height:80%;top:10%;left:0px;background:#0d0d0d;"></div>';
 
-    echo '<img src="https://buildupuniversity.com/wp-content/uploads/2024/02/Old-Paper-Background.jpg" class="w-100 position-absolute" style="height:80%;top:10%;left:0;mix-blend-mode:multiply;" alt="">';
+    // echo '<img src="https://buildupuniversity.com/wp-content/uploads/2024/02/Old-Paper-Background.jpg" class="w-100 position-absolute" style="height:80%;top:10%;left:0;mix-blend-mode:multiply;" alt="">';
     echo '<img src="https://buildupuniversity.com/wp-content/uploads/2024/02/Quotes-Icon-Gold.png" class="h-auto z-1 img-quote position-absolute" style="width:50px;object-fit:contain;top:4.5%;left:50%;transform:translate(-50%,0);" alt="">';
 
     echo get_field('code_block');
@@ -49,8 +50,8 @@ while(have_rows('testimonials_repeater')): the_row();
         ]);
     }
 
-    echo '<span class="d-block h5 cormorant-garamond-regular" style="text-transform:uppercase;padding-top:15px;">' . get_sub_field('name') . '</span>';
-    echo '<span class="d-block text-accent raleway-regular" style="letter-spacing:.2em;font-size:75%;">' . get_sub_field('title') . '</span>';
+    echo '<span class="d-block h5 cormorant-garamond-regular text-accent" style="text-transform:uppercase;padding-top:15px;">' . get_sub_field('name') . '</span>';
+    echo '<span class="d-block raleway-regular" style="letter-spacing:.2em;font-size:75%;color: #bfbfbf;">' . get_sub_field('title') . '</span>';
     
     echo '</div>';
 

@@ -1,19 +1,19 @@
 :root {
-  --accent-primary: #F59B21;
+  --accent-primary: #fbcf02;
   --accent-secondary: #17242D;
-  --accent-tertiary: #D6810A;
+  --accent-tertiary: #feea8e;
   /* Adjusted to be in the same warm color family */
-  --accent-quaternary: #3B362F;
+  --accent-quaternary: #211d1b;
   /* Adjusted to be a darker shade */
-  --accent-quinary: #2E2720;
+  --accent-quinary: #161616;
   /* Adjusted to be a darker shade */
   --accent-senary: #1F1F1F;
   /* Adjusted to be a neutral shade */
-  --accent-septenary: #464646;
+  --accent-septenary: #323232;
   /* Adjusted to be a darker shade */
-  --accent-octonary: #4C4A3D;
+  --accent-octonary: #38352a;
   /* Adjusted to be a darker shade */
-  --accent-nonary: #343434;
+  --accent-nonary: #252525;
   /* Adjusted to be a neutral shade */
   --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   --text-shadow: 1px 1px 3px black;

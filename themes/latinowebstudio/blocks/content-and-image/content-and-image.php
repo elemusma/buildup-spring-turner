@@ -4,7 +4,7 @@ wp_enqueue_style('owl.carousel.min', get_theme_file_uri('/owl-carousel/owl.carou
 wp_enqueue_style('owl.theme.default', get_theme_file_uri('/owl-carousel/owl.theme.default.min.css'));
 
 echo '<section class="position-relative content-section ' . get_field('classes') . '" style="padding:50px 0;' . get_field('style') . '">';
-echo '<div class="position-absolute" style="top:-50px;" id="' . get_field('id') . '"></div>';
+echo '<div class="position-absolute" style="top:-150px;" id="' . get_field('id') . '"></div>';
 echo get_template_part('partials/bg-img');
 
 echo get_field('code_block');

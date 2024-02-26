@@ -70,18 +70,18 @@ echo '</a>';
 echo '</div>';
 
 echo '<div class="col-lg-3 col-5 text-right mobile-hidden">';
-echo '<a href="tel:+1' . get_field('phone','options') . '" class="text-shadow btn-main box-shadow" style="color:white;font-size:1.25rem;text-decoration:none;border-radius:8px;margin-top:1rem;">' . get_field('phone','options') . '</a>';
+echo '<a href="tel:+1' . get_field('phone','options') . '" class="text-shadow d-block" style="color:white;font-size:2rem;text-decoration:none;border-radius:8px;margin-top:1rem;">' . get_field('phone','options') . '</a>';
 echo '</div>';
 
 
 
 echo '<div id="navMenuOverlay" class="position-fixed z-2"></div>';
-echo '<div class="col-lg-4 col-md-8 col-11 nav-items bg-accent-secondary desktop-hidden" id="navItems">';
+echo '<div class="col-lg-4 col-md-8 col-11 nav-items bg-black desktop-hidden" id="navItems">';
 
 echo '<div class="pt-5 pb-5">';
 echo '<div class="close-menu">';
 echo '<div>';
-echo '<span id="navMenuClose" class="close h2 text-gray" style="float:right;">X</span>';
+echo '<span id="navMenuClose" class="close h2 text-gray" style="float:right;cursor:pointer;">X</span>';
 echo '</div>';
 echo '</div>';
 echo '<a href="' . home_url() . '">';
@@ -100,12 +100,24 @@ wp_nav_menu(array(
 
 echo '<a href="tel:+1' . get_field('phone','options') . '" class="text-shadow btn-main box-shadow" style="color:white;font-size:1.25rem;text-decoration:none;border-radius:8px;margin-top:1rem;">' . get_field('phone','options') . '</a>';
 
-echo '<div style="padding-top:50px;">';
-echo '<h2 class="text-white protest">About KADM.TECH</h2>';
-echo '<div class="text-accent">';
-echo '<p>Empowering Connectivity, Transforming Businesses. KADM.TECH is your trusted partner for cutting-edge solutions in network infrastructure. With over 15 years of expertise, we deliver excellence in structured cabling, security installations, and innovative technology services. Connect with confidence - choose KADM.TECH for seamless connectivity that drives your success.</p>';
+echo '<p>CONTACT</p>';
+
+echo '<div class="d-flex">';
+echo '<div class="text-accent">A:</div>';
+echo '<p class="text-white" style="margin:0px 0px 0px 15px;">' . get_field('address','options') . '</p>';
 echo '</div>';
+
+echo '<div class="d-flex" style="padding-top:25px;">';
+echo '<div class="text-accent">T:</div>';
+echo '<p style="margin:0px 0px 0px 15px;"><a href="tel:+1' . get_field('phone','options') . '" class="">' . get_field('phone','options') . '</a></p>';
 echo '</div>';
+
+// echo '<div style="padding-top:50px;">';
+// echo '<h2 class="text-white protest">About KADM.TECH</h2>';
+// echo '<div class="text-accent">';
+// echo '<p>Empowering Connectivity, Transforming Businesses. KADM.TECH is your trusted partner for cutting-edge solutions in network infrastructure. With over 15 years of expertise, we deliver excellence in structured cabling, security installations, and innovative technology services. Connect with confidence - choose KADM.TECH for seamless connectivity that drives your success.</p>';
+// echo '</div>';
+// echo '</div>';
 
 // echo '<p class="text-white" style="padding-top:25px;">ENQUIRE</p>';
 // echo '<div class="text-white position-relative">';

@@ -22,6 +22,7 @@ if( $gallery ):
 foreach( $gallery as $image ):
 echo '<div class="col-md-6" style="padding:5px;">';
 echo '<div class="position-relative overflow-h">';
+
 echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-inventory" style="" class="d-block">';
 
 echo wp_get_attachment_image($image['id'], 'full','',[

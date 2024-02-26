@@ -32,7 +32,7 @@ $('.products-carousel').owlCarousel({
 
 $('.gallery-carousel').owlCarousel({
     // center: true,
-    loop: true,
+    loop: false,
     margin: 10,
     nav: true,
     dots: false,
@@ -168,7 +168,7 @@ $('.testimonial-carousel').owlCarousel({
     autoplayHoverPause: false,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
-    navText: ["<img src='https://buildupuniversity.com/wp-content/uploads/2024/02/Arrow-Circle-Black-Left.png' />", "<img src='https://buildupuniversity.com/wp-content/uploads/2024/02/Arrow-Circle-Black-Right.png' />"],
+    navText: ["<img src='https://buildupuniversity.com/wp-content/uploads/2024/02/Arrow-Circle-Left-Gold.png' />", "<img src='https://buildupuniversity.com/wp-content/uploads/2024/02/Arrow-Circle-Right-Gold.png' />"],
     items: 1
     // responsive: {
     //     0: {

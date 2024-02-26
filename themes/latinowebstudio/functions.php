@@ -16,7 +16,7 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/slides' );
 }
 
-function kadmtech_stylesheets() {
+function spring_turner_stylesheets() {
 wp_enqueue_style('style', get_stylesheet_uri() );
 
 wp_enqueue_style('layout', get_theme_file_uri('/css/sections/layout.css'));
@@ -48,16 +48,17 @@ wp_enqueue_style('social-icons', get_theme_file_uri('/css/sections/social-icons.
 wp_enqueue_style('btn', get_theme_file_uri('/css/elements/btn.css'));
 // fonts
 wp_enqueue_style('fonts', get_theme_file_uri('/css/elements/fonts.css'));
-wp_enqueue_style('font-protest-strike', get_theme_file_uri('/font-protest-strike/font-protest-strike.css'));
+// wp_enqueue_style('font-protest-strike', get_theme_file_uri('/font-protest-strike/font-protest-strike.css'));
 wp_enqueue_style('font-roboto', get_theme_file_uri('/font-roboto/font-roboto.css'));
+wp_enqueue_style('font-aspira', get_theme_file_uri('/font-aspira/font-aspira.css'));
 // wp_enqueue_style('font-open-sans', get_theme_file_uri('/font-open-sans/font-open-sans.css'));
 wp_enqueue_style('font-montserrat', get_theme_file_uri('/font-montserrat/font-montserrat.css'));
-// wp_enqueue_style('coromant-garamond', '//use.typekit.net/fqe2slt.css');
+wp_enqueue_style('coromant-garamond-raleway', '//fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 }
-add_action('wp_enqueue_scripts', 'kadmtech_stylesheets');
+add_action('wp_enqueue_scripts', 'spring_turner_stylesheets');
 // for footer
-function kadmtech_stylesheets_footer() {
+function spring_turner_stylesheets_footer() {
 	wp_enqueue_style('footer', get_theme_file_uri('/css/sections/footer.css'));
 	// wp_enqueue_style('style-footer', get_theme_file_uri('/css/style-footer.css'));
 	// owl carousel
@@ -91,7 +92,7 @@ function kadmtech_stylesheets_footer() {
 		}
 	}
 	
-add_action('get_footer', 'kadmtech_stylesheets_footer');
+add_action('get_footer', 'spring_turner_stylesheets_footer');
 
 // loads enqueued javascript files deferred
 function mind_defer_scripts( $tag, $handle, $src ) {
@@ -115,7 +116,7 @@ function mind_defer_scripts( $tag, $handle, $src ) {
   } 
   add_filter( 'script_loader_tag', 'mind_defer_scripts', 10, 3 );
 
-function kadmtech_menus() {
+function spring_turner_menus() {
  register_nav_menus( array(
    'primary' => __( 'Primary' )));
 register_nav_menus( array(
@@ -125,7 +126,7 @@ register_nav_menus( array(
  add_theme_support('post-thumbnails');
 }
 
-add_action('after_setup_theme', 'kadmtech_menus');
+add_action('after_setup_theme', 'spring_turner_menus');
 
 if( function_exists('acf_add_options_page') ) {
 
@@ -297,6 +298,12 @@ function my_phone_number() {
 	// [phone_number]
 }
 add_shortcode('phone_number', 'my_phone_number');
+
+function my_email_address() {
+    return get_field('email','options');
+	// [email_address]
+}
+add_shortcode('email_address', 'my_email_address');
 
 // ENABLE WOOCOMMERCE
 // add_action('after_setup_theme',function() {

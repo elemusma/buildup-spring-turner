@@ -81,7 +81,7 @@ endif;
 echo '<div class="text-white position-relative triangle-carousel-gallery-content d-flex align-items-center justify-content-start" style="z-index:5;min-height:100vh;">';
 
 echo '<div class="container w-100">';
-echo '<div class="row">';
+echo '<div class="row ' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
 
 echo get_template_part('partials/content-block');
 

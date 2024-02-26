@@ -56,8 +56,8 @@ endwhile; endif;
 
 // start of labels
 if(have_rows('sections')):
-echo '<div class="position-fixed side-navbar d-lg-block d-none" style="top:0%;right:25px;transform:translate(0, 40%);z-index:2;">';
-echo '<ul class="list-unstyled text-right" style="max-width:200px;">';
+echo '<div class="position-fixed side-navbar" style="top:25%;right:25px;transform:translate(0, 40%);z-index:2;">';
+echo '<ul class="list-unstyled text-left" style="max-width:200px;">';
 $sectionsCounter = 0;
 while(have_rows('sections')): the_row();
 $sectionsCounter++;

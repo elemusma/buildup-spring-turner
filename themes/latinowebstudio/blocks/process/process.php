@@ -41,7 +41,7 @@ echo '<div class="position-absolute bg-accent-quaternary" style="width:99%;heigh
 echo '<div class="position-relative pb-3 h-100">';
 echo '<span class="h1 d-block montserrat-thin" style="font-size:3.25rem;margin-bottom:1.5rem;">Step ' . $columnsRepeater . '</span>';
 
-echo '<span class="d-block protest" style="padding-bottom:6.5rem;padding-left:1.5rem;font-size:2rem;">' . get_sub_field('title') . '</span>';
+echo '<span class="d-block cormorant-garamond-light" style="padding-bottom:6.5rem;padding-left:1.5rem;font-size:2rem;">' . get_sub_field('title') . '</span>';
 
 echo '<div class="d-flex align-items-end position-absolute" style="bottom:0;">';
 

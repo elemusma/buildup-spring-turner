@@ -66,7 +66,7 @@ echo '<a href="' . get_permalink(63) . '" style="" class="d-block">';
 
 echo wp_get_attachment_image($image['id'], 'full','',[
     'class'=>'w-100 d-block',
-    'style'=>'height:250px;object-fit:cover;'
+    'style'=>'height:350px;object-fit:cover;'
 ] );
 echo '</a>';
 echo '</div>';
@@ -75,6 +75,7 @@ echo '</div>';
 endif;
 }
 
+if(get_field('content_bottom')) {
 echo '<div class="row justify-content-center">';
 echo '<div class="col-lg-6 text-center" data-aos="fade-up">';
 
@@ -82,7 +83,7 @@ echo '<div class="col-lg-6 text-center" data-aos="fade-up">';
 
 echo '</div>';
 echo '</div>';
-
+}
 
 echo '</div>';
 
